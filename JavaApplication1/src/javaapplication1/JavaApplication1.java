@@ -18,21 +18,21 @@ public class JavaApplication1 {
      */
     public static void main(String[] args) {
         char c;
-//        int i = 0;
+        // int i = 0;
 
         String a = "mai tuan anh";
         String[] splipA = a.split("");
         System.out.println(Arrays.toString(splipA));
-        
-//        for (c = 'A'; c <= 'Z'; ++c) {
-//            for (int i = 0; i < splipA.length; i++) {
-//                if (splipA[i].equals(String.valueOf(c))) {
-//                    splipA[i] = splipA[i].toLowerCase();
-//                }
-//            }
-//        }
-//
-int count = 0;
+
+        // for (c = 'A'; c <= 'Z'; ++c) {
+        // for (int i = 0; i < splipA.length; i++) {
+        // if (splipA[i].equals(String.valueOf(c))) {
+        // splipA[i] = splipA[i].toLowerCase();
+        // }
+        // }
+        // }
+        //
+        int count = 0;
         for (int i = 0; i < splipA.length; i++) {
             if ("a".equals(splipA[i])) {
                 System.out.println(i);
