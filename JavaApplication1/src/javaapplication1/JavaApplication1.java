@@ -17,12 +17,12 @@ public class JavaApplication1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        char c;
-        // int i = 0;
-
-        String a = "mai tuan anh";
-        String[] splipA = a.split("");
-        System.out.println(Arrays.toString(splipA));
+//        char c;
+//        // int i = 0;
+//
+//        String a = "mai tuan anh";
+//        String[] splipA = a.split("");
+//        System.out.println(Arrays.toString(splipA));
 
         // for (c = 'A'; c <= 'Z'; ++c) {
         // for (int i = 0; i < splipA.length; i++) {
@@ -32,20 +32,31 @@ public class JavaApplication1 {
         // }
         // }
         //
-        int count = 0;
-        for (int i = 0; i < splipA.length; i++) {
-            if ("a".equals(splipA[i])) {
-                System.out.println(i);
-                count++;
-            }
-        }
-        System.out.println(count);
+//        int count = 0;
+//        for (int i = 0; i < splipA.length; i++) {
+//            if ("a".equals(splipA[i])) {
+//                System.out.println(i);
+//                count++;
+//            }
+//        }
+//        System.out.println(count);
+        
+        // những kiểu khai báo array
+        // overload
+        
+//        sortArray(1, 1.0f);
+        
     }
 
-    public static void function1(int x, float y) {
-        System.out.println(x + " " + y);
-
-        System.out.println(x + (int) y);
-    }
+//    public static void sortArray(int x, float y) {
+//        // abc
+//    	int[] array = {2,1,3};
+//    	Arrays.sort(array);
+//    	System.out.println(Arrays.toString(array));
+//    }
+//    
+//    public static void sortArray(int x, String y) {
+//        // viet code tu duy
+//    }
 
 }
