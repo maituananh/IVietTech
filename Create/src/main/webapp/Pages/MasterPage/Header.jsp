@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +10,7 @@
 <meta content="Free HTML Templates" name="description">
 
 <!-- Favicon -->
-<link href="/style/img/favicon.ico" rel="icon">
+<link href="style/img/favicon.ico" rel="icon">
 
 <!-- Google Web Fonts -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,12 +24,11 @@
 	rel="stylesheet">
 
 <!-- Libraries Stylesheet -->
-<link href="style/lib/owlcarousel/assets/owl.carousel.min.css"
+<link href="<c:url value="/style/lib/owlcarousel/assets/owl.carousel.min.css" />"
 	rel="stylesheet">
 
-<!--
-     Customized Bootstrap Stylesheet -->
-<link href="style/css/style.css" rel="stylesheet">
+<!-- Customized Bootstrap Stylesheet -->
+<link href="<c:url value="/style/css/style.css" />" rel="stylesheet">
 </head>
 
 <body>
@@ -81,7 +81,11 @@
 				<div class="collapse navbar-collapse justify-content-between px-3"
 					id="navbarCollapse">
 					<div class="navbar-nav ml-auto py-0">
-						<a href="index.html" class="nav-item nav-link active">Home</a> <a
+
+						<%
+						String home = "home";
+						%>
+						<a href="home" class="nav-item nav-link active">Home</a> <a
 							href="about.html" class="nav-item nav-link">About</a> <a
 							href="service.html" class="nav-item nav-link">Services</a> <a
 							href="pricing.html" class="nav-item nav-link">Pricing</a>
@@ -100,52 +104,3 @@
 		</div>
 	</div>
 	<!-- Navbar End -->
-
-
-	<!-- Carousel Start -->
-	<div class="container-fluid p-0">
-		<div id="header-carousel" class="carousel slide" data-ride="carousel">
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img class="w-100" src="style/img/carousel-1.jpg" alt="Image">
-					<div
-						class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-						<div class="p-3" style="max-width: 900px;">
-							<h4 class="text-white text-uppercase mb-md-3">Laundry & Dry
-								Cleaning</h4>
-							<h1 class="display-3 text-white mb-md-4">Best For Laundry
-								Services</h1>
-							<a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Learn
-								More</a>
-						</div>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<img class="w-100" src="style/img/carousel-2.jpg" alt="Image">
-					<div
-						class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-						<div class="p-3" style="max-width: 900px;">
-							<h4 class="text-white text-uppercase mb-md-3">Laundry & Dry
-								Cleaning</h4>
-							<h1 class="display-3 text-white mb-md-4">Highly Professional
-								Staff</h1>
-							<a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Learn
-								More</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<a class="carousel-control-prev" href="#header-carousel"
-				data-slide="prev">
-				<div class="btn btn-secondary" style="width: 45px; height: 45px;">
-					<span class="carousel-control-prev-icon mb-n2"></span>
-				</div>
-			</a> <a class="carousel-control-next" href="#header-carousel"
-				data-slide="next">
-				<div class="btn btn-secondary" style="width: 45px; height: 45px;">
-					<span class="carousel-control-next-icon mb-n2"></span>
-				</div>
-			</a>
-		</div>
-	</div>
-	<!-- Carousel End -->

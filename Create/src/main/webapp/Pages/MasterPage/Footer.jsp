@@ -1,3 +1,69 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!-- Testimonial Start -->
+<div class="container-fluid py-5">
+	<div class="container">
+		<h6
+			class="text-secondary text-uppercase text-center font-weight-medium mb-3">Testimonial</h6>
+		<h1 class="display-4 text-center mb-5">Our Clients Say</h1>
+		<div class="owl-carousel testimonial-carousel">
+			<div class="testimonial-item">
+				<img
+					class="position-relative rounded-circle bg-white shadow mx-auto"
+					src="<c:url value="/style/img/testimonial-1.jpg" />"
+					style="width: 100px; height: 100px; padding: 12px; margin-bottom: -50px; z-index: 1;"
+					alt="">
+				<div class="bg-light text-center p-4 pt-0">
+					<h5 class="font-weight-medium mt-5">Client Name</h5>
+					<p class="text-muted font-italic">Profession</p>
+					<p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum
+						est duo elitr eirmod clita lorem. Dolor ipsum clita</p>
+				</div>
+			</div>
+			<div class="testimonial-item">
+				<img
+					class="position-relative rounded-circle bg-white shadow mx-auto"
+					src="<c:url value="/style/img/testimonial-2.jpg" />"
+					style="width: 100px; height: 100px; padding: 12px; margin-bottom: -50px; z-index: 1;"
+					alt="">
+				<div class="bg-light text-center p-4 pt-0">
+					<h5 class="font-weight-medium mt-5">Client Name</h5>
+					<p class="text-muted font-italic">Profession</p>
+					<p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum
+						est duo elitr eirmod clita lorem. Dolor ipsum clita</p>
+				</div>
+			</div>
+			<div class="testimonial-item">
+				<img
+					class="position-relative rounded-circle bg-white shadow mx-auto"
+					src="<c:url value="/style/img/testimonial-3.jpg" />"
+					style="width: 100px; height: 100px; padding: 12px; margin-bottom: -50px; z-index: 1;"
+					alt="">
+				<div class="bg-light text-center p-4 pt-0">
+					<h5 class="font-weight-medium mt-5">Client Name</h5>
+					<p class="text-muted font-italic">Profession</p>
+					<p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum
+						est duo elitr eirmod clita lorem. Dolor ipsum clita</p>
+				</div>
+			</div>
+			<div class="testimonial-item">
+				<img
+					class="position-relative rounded-circle bg-white shadow mx-auto"
+					src="<c:url value="/style/img/testimonial-4.jpg" />"
+					style="width: 100px; height: 100px; padding: 12px; margin-bottom: -50px; z-index: 1;"
+					alt="">
+				<div class="bg-light text-center p-4 pt-0">
+					<h5 class="font-weight-medium mt-5">Client Name</h5>
+					<p class="text-muted font-italic">Profession</p>
+					<p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum
+						est duo elitr eirmod clita lorem. Dolor ipsum clita</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Testimonial End -->
+
+
 <!-- Footer Start -->
 <div
 	class="container-fluid bg-primary text-white mt-5 pt-5 px-sm-3 px-md-5">
@@ -90,17 +156,17 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script
 	src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-<script src="style/lib/easing/easing.min.js"></script>
-<script src="style/lib/waypoints/waypoints.min.js"></script>
-<script src="style/lib/counterup/counterup.min.js"></script>
-<script src="style/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="<c:url value="/style/lib/easing/easing.min.js" />"></script>
+<script src="<c:url value="/style/lib/waypoints/waypoints.min.js" />"></script>
+<script src="<c:url value="/style/lib/counterup/counterup.min.js" />"></script>
+<script src="<c:url value="/style/lib/owlcarousel/owl.carousel.min.js" />"></script>
 
 <!-- Contact Javascript File -->
-<script src="style/mail/jqBootstrapValidation.min.js"></script>
-<script src="style/mail/contact.js"></script>
+<script src="<c:url value="/style/mail/jqBootstrapValidation.min.js" />"></script>
+<script src="<c:url value="/style/mail/contact.js" />"></script>
 
 <!-- Template Javascript -->
-<script src="style/js/main.js"></script>
+<script src="<c:url value="/style/js/main.js" />"></script>
 </body>
 
 </html>

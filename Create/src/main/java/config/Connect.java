@@ -13,6 +13,7 @@ public class Connect {
 
 //	public static void main(String[] args) {
 //		try {
+//			getConnection(DB_URL, USER_NAME, PASSWORD);
 //			Statement stmt = conn.createStatement();
 //			ResultSet rs = stmt.executeQuery("select * from student");
 //			while (rs.next()) {
@@ -36,9 +37,13 @@ public class Connect {
 		return conn;
 	}
 
-	public static Connection getConn() {
-		if (Objects.isNull(conn)) {
-			return getConnection(DB_URL, USER_NAME, PASSWORD);
+	public static Connection openConnect() {
+		try {
+			if (Objects.isNull(conn) || conn.isClosed()) {
+				return getConnection(DB_URL, USER_NAME, PASSWORD);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
 		}
 		return conn;
 	}
